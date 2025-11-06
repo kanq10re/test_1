@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Portfolio</title>
+		<link href="./css/index.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="my-favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="my-favicon/favicon.svg" />
+		<link rel="shortcut icon" href="my-favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="my-favicon/apple-touch-icon.png"/>
+		<meta name="apple-mobile-web-app-title" content="Portfolio"/>
+		<link rel="manifest" href="my-favicon/site.webmanifest"/>
+	</head>
+	<body>
+	<script>
+		function toggleMenu() {
+			document.getElementById("navLinks").classList.toggle("show");
+		}
+		function scrollToTop() {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
+		window.addEventListener('scroll', () => {
+			const logoText = document.querySelector('.header-logo-text');
+			const header = document.querySelector('.header');
+			const scrollY = window.scrollY;
+
+			const threshold = 100;
+
+			if (scrollY > threshold) {
+				header.classList.add('scrolled');
+			} else {
+				header.classList.remove('scrolled');
+			}
+			const maxScroll = 100;
+			const opacity = Math.max(0, 1 - scrollY / maxScroll);
+  	  const scale = Math.max(0.8, 1 - scrollY / (maxScroll * 2));
+
+			logoText.style.opacity = opacity;
+			logoText.style.transform = `scale(${scale})`;
+  });
+	</script>
+	<div class="sidebar">
+		
+	</div>
+
+		<header class="header">
+			<a href="index.html" class="header-logo-link">
+				<img src="images/logo.portfolio.png" alt="Portfolio" class="header-logo-image">
+				<span class="header-logo-text">Portfolio</span>
+			</a>
+			<nav class="nav-links">
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+			</nav>
+			<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+		</header>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<p>a</p>
+		<footer class="footer">
+			<div class="footer-logo">
+				<img src="images/logo.portfolio.png" alt="Portfolio" class="footer-logo-image">
+				<span class="footer-logo-text">Portfolio</span>
+			</div>
+			<p>SNS</p>
+			<div class="footer-social">
+				<a href="https://x.com/silatrommi" class="footer-icon-link">
+					<img src="images/x.black.png" alt="X" class="footer-icon-link">	
+				</a>
+				<a href="https://www.instagram.com/silatrommix1" class="footer-icon-link">
+					<img src="images/Instagram.black.png" alt="Instagram" class="footer-icon-link">
+				</a>
+				<a href="https://github.com/kanq10re" class="footer-icon-link">
+					<img src="images/github-mark.svg" alt="GitHub" class="footer-icon-link">
+				</a>
+			</div>
+		</footer>
+		<button onclick="scrollToTop()" class="scroll-top-button">↑</button> <!--topへ戻るボタン-->
+		<script>
+		</script>
+
+	</body>
+</html>
